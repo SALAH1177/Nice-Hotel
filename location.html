@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NICEHOTEL-Location</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Comfortaa:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+     <link rel="stylesheet" href="assets/style/css/aos.css">
+    <link rel="stylesheet" href="assets/style/global.css" />
+    <link rel="stylesheet" href="assets/style/location.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="upper-header container-fluid px-md-5 px-3 py-2">
+        <div class="row mx-sm-3 mx-0">
+          <div class="email_phone col-md-8 col d-flex align-items-center gap-5" style="font-size: 13px">
+            <a href="#" class="text-light"
+              ><span class="text-center"><i class="fa-regular fa-envelope text-light"></i></span> contact@example.com</a
+            >
+            <p class="text-light m-0">
+              <span class="text-center"><i class="fa-solid fa-mobile-screen text-light"></i></span>
+              +1 5589 55488 55
+            </p>
+          </div>
+          <ul class="d-md-flex align-items-center justify-content-end gap-4 col-4 d-none list-unstyled m-0">
+            <li>
+              <a href="#"><i class="fa-brands fa-x-twitter text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram text-secondary"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin text-secondary"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="lower-header w-100 top-0 start-0" id="nav-fixed">
+        <nav class="navbar navbar-expand-lg px-md-5 px-3 py-3" id="navbar">
+          <div class="container-fluid ms-sm-3">
+            <a class="navbar-brand fs-2 text-light heading-font extra" href="#">NiceHotel</a>
+            <button class="navbar-toggler navbar-menu extra" type="button">
+              <span class="text-light"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto d-flex align-items-lg-center gap-2">
+                <li class="nav-item close text-light text-end fs-4 d-lg-none d-block navbar-menu">
+                  <i class="fa-solid fa-xmark"></i>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="rooms.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="amenities.html">Amenities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="location.html">location</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                  <ul class="dropdown-menu p-3 mt-2">
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="roomdetails.html">Room Details</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="restaurant.html">Restaurant</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="offers.html">Offers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="events.html">Events</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="booking.html">Booking</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="terms.html">Terms Page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="privacy.html">Privacy Page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="404.html">404 Page</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-3" href="starter.html">Starter Page</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span><i class="fa-solid fa-language text-light"></i></span>
+                    Language
+                  </a>
+                  <ul class="dropdown-menu p-3 mt-2">
+                    <li>
+                      <a class="dropdown-item text-light mt-2" href="#">English</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-2" href="#">France</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-light mt-2" href="#">Spanish</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="login.html" target="_blank">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="info">
+        <div class="container p-3 ms-lg-4 ms-md-3 ms-sm-2 ms-0 mt-0">
+          <p class="text-light">
+            <a class="home-paga" href="index.html">Home</a>
+            /
+            <span class="text-light">Location</span>
+          </p>
+          <h1 class="fw-bold text-light">Location</h1>
+        </div>
+      </section>
+
+      <section class="location-section">
+        <div class="container">
+          <div class="row g-2 align-items-start">
+            <!-- LEFT SIDE -->
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+              <h2 class="section-title">Prime Downtown Location</h2>
+
+              <p class="section-text">
+                Discover the perfect blend of urban convenience and cultural richness right at your doorstep. Our hotel places you in the heart of the city's most vibrant district.
+              </p>
+
+              <!-- CARD 1 -->
+              <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+
+                <div>
+                  <h4>Historic City Center</h4>
+
+                  <p>3-minute walk to the main square and historic landmarks</p>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-train-front-fill"></i>
+                </div>
+
+                <div>
+                  <h4>Metro Station</h4>
+
+                  <p>Central Station just 200 meters away with direct airport connection</p>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-shop"></i>
+                </div>
+
+                <div>
+                  <h4>Shopping District</h4>
+                  <p>Premium boutiques and local markets within walking distance</p>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-palette"></i>
+                </div>
+
+                <div>
+                  <h4>Cafe Culture</h4>
+                  <p>Trendy cafes and vibrant nightlife just steps from your room</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200">
+              <h2 class="section-titles text-center" style="font-style: italic; margin-bottom: 10px;">Nearby Attractions</h2>
+
+              <!-- PLACE CARD -->
+              <div class="place-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/location-1.webp" alt="" />
+
+                <div class="place-content">
+                  <h3>St. Mary’s Cathedral</h3>
+
+                  <span class="distance">5 min walk</span>
+
+                  <p>Gothic masterpiece with stunning architecture and centuries of history</p>
+                </div>
+              </div>
+
+              <!-- PLACE CARD -->
+              <div class="place-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/location-2.webp" alt="" />
+
+                <div class="place-content">
+                  <h3>Mountain Escape</h3>
+
+                  <span class="distance">15 min drive</span>
+
+                  <p>Enjoy breathtaking natural scenery and unforgettable outdoor experiences</p>
+                </div>
+              </div>
+
+              <div class="place-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/location-3.webp" alt="" />
+
+                <div class="place-content">
+                  <h3>Riverside Park</h3>
+
+                  <span class="distance">12 min walk</span>
+
+                  <p>Peaceful green space perfect for morning jogs and evening strolls</p>
+                </div>
+              </div>
+
+              <div class="place-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/location-4.webp" alt="" />
+
+                <div class="place-content">
+                  <h3>Grand Central Market</h3>
+
+                  <span class="distance">6 min walk</span>
+
+                  <p>Bustling marketplace with local delicacies and artisanal crafts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="getting-section py-5">
+        <div class="container">
+          <div class="getting-box">
+            <h2 class="text-center section-title mb-5" style="font-size: 30px">Getting Here</h2>
+
+            <div class="row g-4">
+              <!-- CARD 1 -->
+              <div class="col-lg-6" data-aos="fade-up">
+                <div class="transport-card">
+                  <div class="icon-box">
+                    <i class="bi bi-airplane-fill" style="font-size: 30px"></i>
+                  </div>
+
+                  <div>
+                    <h3 style="color: white; font-size: 20px; margin-bottom: 15px">From Airport</h3>
+
+                    <p style="color: #d7d7d7; line-height: 1.5; margin: 0; font-size: 18px">Direct metro line takes 35 minutes. Airport shuttle service available upon request.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="transport-card">
+                  <div class="icon-box">
+                    <i class="bi bi-train-front-fill" style="font-size: 30px"></i>
+                  </div>
+
+                  <div>
+                    <h3 style="color: white; font-size: 20px; margin-bottom: 15px">By Train</h3>
+
+                    <p style="color: #d7d7d7; line-height: 1.5; margin: 0; font-size: 18px">Central Station is 200m away with connections to all major cities.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="transport-card">
+                  <div class="icon-box">
+                    <i class="bi bi-car-front-fill" style="font-size: 30px"></i>
+                  </div>
+
+                  <div>
+                    <h3 style="color: white; font-size: 20px; margin-bottom: 15px">By Car</h3>
+
+                    <p style="color: #d7d7d7; line-height: 1.5; margin: 0; font-size: 18px">Valet parking available. Underground garage with 24/7 security access.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 4 -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="transport-card">
+                  <div class="icon-box">
+                    <i class="bi bi-taxi-front-fill" style="font-size: 30px"></i>
+                  </div>
+
+                  <div>
+                    <h3 style="color: white; font-size: 20px; margin-bottom: 15px">Taxi & Rideshare</h3>
+
+                    <p style="color: #d7d7d7; line-height: 1.5; margin: 0; font-size: 18px">Dedicated pickup zone right outside the main entrance for your convenience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+      <footer>
+      <div class="container-fluid upper-footer py-5 px-md-5 px-3">
+        <div class="row mx-3 row-gap-5 column-gap-3 justify-content-between">
+          <div class="column col-lg-3 col-md-5 col-sm-5 col-12">
+            <h2 class="mb-5 text-light heading-font">NiceHotel</h2>
+            <p class="text-light mb-1">A108 Adam Street</p>
+            <p class="text-light mb-1">New York, NY 535022</p>
+            <p class="text-light mt-3">Phone: +1 5589 55488 55</p>
+            <p class="text-light mt-1">Email: <a href="#" class="text-light">info@example.com</a></p>
+          </div>
+          <div class="column col-lg-2 col-md-3 col-sm-5 col-12">
+            <h5 class="mb-2 text-light heading-font">Useful Links</h5>
+            <hr class="break mb-3 opacity-100" />
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-secondary">Home</a></li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Terms of service</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-lg-2 col-md-3 col-sm-5 col-12">
+            <h5 class="mb-2 text-light heading-font">Our Services</h5>
+            <hr class="break mb-3 opacity-100" />
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Web Design</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Web Development</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Product Management</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Marketing</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Graphic Design</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-lg-2 col-md-3 col-sm-5 col-12">
+            <h5 class="mb-2 text-light heading-font">Hic solutasetp</h5>
+            <hr class="break mb-3 opacity-100" />
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Molestiae accusamus iure</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Excepturi dignissimos</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Suscipit distinctio</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Dilecta</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Sit quas consectetur</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column col-lg-2 col-md-3 col-sm-5 col-12">
+            <h5 class="mb-2 text-light heading-font">Nobis illum</h5>
+            <hr class="break mb-3 opacity-100" />
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-secondary">Ipsam</a></li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Laudantium dolorum</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Dinera</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-secondary">Trodelas</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-secondary">Flexo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid lower-footer py-4 px-md-5 px-3">
+        <div class="row mx-3 row-gap-4">
+          <div class="copyright col-md-6 col-12 text-md-start text-center">
+            <p class="text-light">© Copyright MyWebsite. All Rights Reserved</p>
+            <p class="text-light">Designed by <mark style="background: none; color: #c59d5f; cursor: pointer">AYA only</mark></p>
+          </div>
+          <div class="social col-md-6 col-12">
+            <ul class="d-flex align-items-center justify-content-md-end justify-content-center gap-3 fs-4 list-unstyled">
+              <li>
+                <a href="#" class="bg-dark bg-opacity-75 p-1 rounded-2"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#" class="bg-dark bg-opacity-75 p-1 rounded-2"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#" class="bg-dark bg-opacity-75 p-1 rounded-2"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#" class="bg-dark bg-opacity-75 p-1 rounded-2"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="btn-up" class="btn-to-top text-light border-0 d-none position-fixed justify-content-center align-items-center rounded-circle">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+     <script src="assets/script/js/aos.js"></script>
+    <script src="assets/script/bootstrap.bundle.min.js"></script>
+    <script src="assets/script/global.js"></script>
+    <script src="assets/script/location.js"></script>
+  </body>
+</html>

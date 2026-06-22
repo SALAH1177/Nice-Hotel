@@ -1,0 +1,83 @@
+:root {
+  --accent-color: #c59d5f;
+  --default-color: #bdbcbc;
+  --surface-color: #1e2022;
+  --item-color: #dddddd;
+}
+.page-title {
+  background-color: var(--surface-color) !important;
+}
+.special-text {
+  color: var(--color-for-button-and-icon);
+}
+.para-color {
+  color: var(--default-color);
+}
+.btn {
+  background-color: var(--color-for-button-and-icon);
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(205, 162, 116, 0.25);
+}
+.btn:hover {
+  background-color: #c59c5fa5 !important;
+}
+.btn-call {
+  background-color: transparent !important;
+  border: 2px solid var(--color-for-button-and-icon);
+}
+.carousel-indicators button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.carousel-indicators .active {
+  background-color: var(--color-for-button-and-icon) !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(187, 146, 71, 0.1);
+  border-radius: 20%;
+  margin-right: 15px;
+}
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(187, 146, 71, 0.1);
+  border-radius: 50%;
+}
+/*  */
+.service-card {
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+/*  */
+.hotel-info .nav-link.active {
+  color: var(--color-for-button-and-icon) !important;
+}
+.hotel-info .nav-link.active {
+  color: #c5a880 !important;
+  border-bottom: 4px solid #c5a880 !important;
+}
+.services .service-card {
+  background-color: var(--bg-for-section);
+}
+.booking-card {
+  background-color: var(--bg-for-section);
+  box-shadow: 0 0 0 0.1rem rgba(240, 191, 139, 0.25);
+}

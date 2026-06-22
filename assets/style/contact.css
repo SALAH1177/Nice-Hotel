@@ -1,0 +1,40 @@
+:root {
+  --accent-color: #c59d5f;
+  --default-color: #bdbcbc;
+  --surface-color: #1e2022;
+  --item-color: #dddddd;
+}
+.page-title {
+  background-color: var(--surface-color) !important;
+}
+.special-text {
+  color: var(--color-for-button-and-icon);
+}
+.para-color {
+  color: var(--default-color);
+}
+.item-color {
+  color: var(--item-color);
+}
+.btn {
+  background-color: var(--color-for-button-and-icon);
+}
+.btn:hover {
+  background-color: #c59c5fa5 !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(235, 124, 7, 0.25);
+}
+.form {
+  background-color: var(--bg-for-navbar);
+}
+.form-control::placeholder {
+  color: var(--default-color);
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(205, 162, 116, 0.25);
+  border-radius: 50%;
+  margin-right: 15px;
+}

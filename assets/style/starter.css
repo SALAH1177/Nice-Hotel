@@ -1,0 +1,12 @@
+.title h2::after{
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 5px;
+    background: #c59d5f;
+    border-radius: 50px;
+}

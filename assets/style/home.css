@@ -1,0 +1,350 @@
+
+/* =============================Main=================================================== */
+.btn-bg {
+  background-color: var(--color-for-button-and-icon);
+}
+.bg-section {
+  background-color: var(--bg-for-section);
+}
+.bg-sec-section {
+  background-color: var(--second-bg-for-section);
+}
+.bg-special {
+  background-color: #68573e52;
+}
+.btn-outline {
+  outline: 2px solid var(--color-for-button-and-icon);
+}
+.text-color {
+  color: var(--color-for-button-and-icon);
+}
+.para-color {
+  color: #b3b3b3;
+}
+.transition {
+  transition: 0.3s all linear;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-stretch {
+  height: stretch;
+}
+.special-shadow {
+  box-shadow: 0 0 10px 1px #68573e;
+}
+.break {
+  background: var(--color-for-button-and-icon);
+  color: var(--color-for-button-and-icon);
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+}
+.spec:hover {
+  box-shadow: 0 5px 10px 3px #68573e;
+}
+.spec-2:hover {
+  background-color: var(--color-for-button-and-icon) !important;
+  outline-color: var(--color-for-button-and-icon) !important;
+  color: white !important;
+}
+.trans-3:hover {
+  transform: translateY(-3px) !important;
+  transition-delay: 0s !important;
+}
+.trans-5:hover {
+  transform: translateY(-5px) !important;
+  transition-delay: 0s !important;
+}
+.img-scale:hover {
+  transform: scale(1.1) !important;
+}
+.img-div-scale:hover img {
+  transform: scale(1.1) !important;
+}
+.ml-hover:hover span {
+  margin-left: 5px;
+}
+.spec-outline {
+  outline: 2px solid rgba(0, 0, 0, 0);
+}
+.spec-outline:hover {
+  outline: 2px solid var(--color-for-button-and-icon);
+}
+/* =======================Hero============================================= */
+.hero .container-fluid .row p {
+  font-size: clamp(18px, 1.6vw, 30px) !important;
+}
+.hero .container-fluid .video-bg-2 {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.hero .container-fluid .spec-btn:hover {
+  background-color: transparent !important;
+}
+.hero .booking .row {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+}
+.hero .booking .row input,
+.hero .booking .row select {
+  background-color: transparent;
+  color: white;
+}
+.hero .booking .row input:focus,
+.hero .booking .row select:focus {
+  border-color: var(--color-for-button-and-icon);
+  box-shadow: 0 0 0 3px #68573e;
+}
+.hero .booking .row select option {
+  background-color: var(--bg-for-section);
+}
+/* ========================About======================================= */
+.about {
+  background-color: var(--main-color);
+}
+.about .container-fluid .benefits p {
+  background-color: #77664b3f;
+  font-size: 15px;
+}
+.about .container-fluid .about-btn .spec-2:hover a {
+  color: white !important;
+}
+.about .container-fluid .lower-img img {
+  width: 49.5%;
+}
+.about .container-fluid .lower-img .img-1 {
+  border-bottom-left-radius: 20px;
+}
+.about .container-fluid .lower-img .img-2 {
+  border-bottom-right-radius: 20px;
+}
+.about .container-fluid .review {
+  transform: translate(-45px, -10px);
+}
+.about .container-fluid .best-hotel {
+  bottom: 10%;
+  right: 5%;
+  width: 170px;
+}
+/* ==========================Rooms========================================= */
+.rooms p {
+  color: #afafaf;
+}
+.title hr {
+  background: var(--color-for-button-and-icon);
+  width: 70px;
+  height: 5px;
+  border-radius: 10px;
+}
+.rooms .container-fluid .room-img {
+  height: 200px;
+}
+.rooms .container-fluid .room-img .room-details {
+  bottom: 5%;
+  left: 5%;
+}
+.rooms .container-fluid .room-img .img-details {
+  backdrop-filter: blur(8px);
+}
+
+.rooms .container-fluid .column-2 a:hover span {
+  height: 2px;
+  transform: translateY(5px);
+}
+.rooms .container-fluid .column-2 .img span {
+  top: 15px;
+  right: 15px;
+}
+.rooms .container-fluid .column-2 .rooms-view {
+  width: 48%;
+}
+.rooms .container-fluid .offer a {
+  outline: 1px solid rgba(255, 255, 255, 0.534);
+}
+.rooms .container-fluid .offer a:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+/* =====================================Amenities=============================== */
+.amenities .container-fluid .column .object {
+  outline: 1px solid rgba(128, 128, 128, 0.445);
+}
+.amenities .container-fluid .column .object:hover {
+  outline: 1px solid var(--color-for-button-and-icon);
+}
+/* ====================================Testmonials==================================== */
+.testmonials .container-fluid .person {
+  height: 450px;
+}
+.testmonials .container-fluid .person:hover {
+  outline: 1px solid var(--color-for-button-and-icon);
+}
+.testmonials .container-fluid .person span {
+  bottom: 10px;
+  right: 10px;
+}
+.testmonials .container-fluid .btns-sweep button{
+  width: 40px;
+  height: 40px;
+}
+.testmonials .container-fluid .btns-sweep button:hover {
+  background-color: var(--hover-color);
+}
+/* =================================Offers===================================== */
+.offers .container-fluid .sales .room .exclusive span {
+  background: var(--color-for-button-and-icon) !important;
+}
+.offers .container-fluid .sales .room .facility .img span {
+  top: 5%;
+  right: 5%;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  font-size: 13px;
+}
+.offers .container-fluid .flash-sale .row {
+  background-image: url(../images/showcase-6.webp);
+  background-position: center;
+  backdrop-filter: blur(8px);
+}
+.offers .container-fluid .flash-sale .bg {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+.offers .container-fluid .flash-sale .counter a {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+}
+.offers .container-fluid .flash-sale .counter .link:hover {
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+}
+.offers .container-fluid .flash-sale .counter .count-sect {
+  background-color: rgba(255, 255, 255, 0.068);
+}
+/* ==============================Book-now=================================== */
+.book-now .container-fluid .links .spec-2 {
+  outline: 2px solid white;
+}
+.book-now .container-fluid .column .img {
+  box-shadow: 0 10px 35px rgba(255, 255, 255, 0.2);
+}
+.book-now .container-fluid .spec-offer {
+  top: 5%;
+  right: 5%;
+}
+/* ===============================Events==================================== */
+.event .container-fluid .events-details .event-wrap .upper-row span {
+  left: 5%;
+  top: 20%;
+  opacity: 0;
+}
+.event .container-fluid .events-details .event-wrap {
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.164);
+}
+.event .container-fluid .events-details .event-wrap:hover {
+  box-shadow: 0 25px 60px rgba(255, 255, 255, 0.164);
+}
+.event .container-fluid .events-details .event-wrap:hover .upper-row .bg {
+  background-color: #c59c5f42;
+}
+.event .container-fluid .events-details .event-wrap:hover .mid-row h3 {
+  color: var(--color-for-button-and-icon);
+}
+.event .container-fluid .events-details .event-wrap:hover .upper-row span {
+  opacity: 1;
+  top: 5%;
+}
+.event .container-fluid .events-details .event-wrap .lower-row:hover * {
+  color: white;
+  outline-color: white;
+}
+.event .container-fluid .events-details .event-wrap .lower-row:hover span {
+  margin-left: 5px;
+}
+/* ==============================Locations & Activitys================================= */
+.location .container-fluid .activitys .upper-row span {
+  top: 10%;
+  left: 5%;
+}
+.location .container-fluid .activitys .column .row {
+  outline: 1px solid rgba(128, 128, 128, 0.3);
+}
+.location .container-fluid .activitys .column .row:hover {
+  box-shadow: 0 0 30px 7px rgba(255, 255, 255, 0.164);
+  outline: 1px solid var(--hover-color);
+  transform: translateY(-8px);
+}
+.location .container-fluid .explore {
+  background-color: #68573e52;
+  outline: 1px solid var(--hover-color);
+}
+.location .container-fluid .explore .link a:hover span {
+  transform: translate(5px, -3px);
+}
+.location .container-fluid .explore .link a:hover {
+  background-color: #fab73ba5;
+}
+/* ==============================Gallery============================ */
+.gallery .container-fluid .column .img .text {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  transform: translateY(15px);
+}
+.gallery .container-fluid .column .img span {
+  top: 5%;
+  right: 5%;
+}
+.gallery .container-fluid .column .img:hover .text,
+.gallery .container-fluid .column .img:hover span {
+  opacity: 1 !important;
+  transform: translateY(0);
+}
+.gallery .container-fluid .column-2 .bg {
+  background-color: #c0883493;
+}
+.gallery .container-fluid .column-2 .bg:hover {
+  opacity: 1 !important;
+}
+.gallery .container-fluid .gallery-wrapper .swiper-slide .img:hover a {
+  opacity: 50% !important;
+}
+.gallery .container-fluid .links .spec-btn:hover {
+  background-color: var(--hover-color);
+}
+/* =============================Footer=============================================== */
+footer .upper-footer {
+  background-color: var(--bg-for-section);
+}
+footer .upper-footer a:hover {
+  color: var(--color-for-button-and-icon) !important;
+}
+footer .lower-footer {
+  background-color: #191b1e;
+}
+footer .lower-footer a {
+  color: var(--color-for-button-and-icon);
+}
+footer .lower-footer ul li :hover {
+  background-color: var(--color-for-button-and-icon) !important;
+  color: white !important;
+}
+/* ===============================Media=================================================== */
+@media (max-width: 991px) {
+  .about .container-fluid .review {
+    position: relative !important;
+    width: 100%;
+    top: 0;
+    transform: translate(0, 0);
+  }
+}
+@media (max-width: 576px) {
+  .about .container-fluid .lower-img img {
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .rooms .container-fluid .column-2 .rooms-view {
+    width: 100%;
+  }
+}
+ 

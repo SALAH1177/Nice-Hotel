@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* colors */
+:root {
+  --main-color: #121416;
+  --card-color: #191b1e;
+  --color-for-button-and-icon: #c59d5f;
+  --hover-color: #ddb06da5;
+  --text-color: #e2e2e2;
+  --bg-for-section: #222426;
+  --second-bg-for-section: #0c0d0f;
+  --bg-for-navbar: #202224;
+}
+
+/* Fonts */
+:root {
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --heading-font: "Comfortaa", sans-serif;
+  --nav-font: "Open Sans", sans-serif;
+}
+/* animations */
+:root{
+  --hover-box: all 0.3s linear;
+}
+html,body{
+ overflow-x: hidden;
+}
+
+body {
+  background: var(--main-color) !important;
+  font-family: "Jost", sans-serif;
+overflow-x: hidden;
+color: #fff;
+}
+
+.heading-font {
+  font-family: var(--heading-font) !important;
+}
+
+/* info section */
+.info {
+  background-color: var(--card-color);
+}
+
+/* media */
+/* mobile */
+@media (max-width: 576px) {
+  .info {
+    margin: 0 !important;
+  }
+}
+
+/* button home */
+.home-paga {
+  transition: var(--hover-box);
+  color: var(--color-for-button-and-icon) !important;
+}
+
+.home-paga:hover {
+  color: var(--hover-color) !important;
+}
+
+/* link */
+a {
+  text-decoration: none !important;
+}
+
+/*=============================Header=============================================== */
+/*=============================Header=============================================== */
+header *,
+footer * {
+  transition: 0.3s linear all;
+}
+header {
+  background-color: var(--bg-for-navbar);
+}
+header a,
+footer a {
+  text-decoration: none !important;
+}
+header .active {
+  color: var(--color-for-button-and-icon) !important;
+}
+header .upper-header {
+  background-color: var(--second-bg-for-section);
+}
+header .upper-header ul li :hover {
+  color: white !important;
+}
+header nav .dropdown-menu {
+  background-color: var(--bg-for-section);
+  transition: all 0.3s;
+}
+ul li :hover,
+header nav ul .dropdown a:hover * {
+  color: var(--color-for-button-and-icon) !important;
+}
+header nav .dropdown-item {
+  background-color: transparent !important;
+}
+header .navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.show_menu {
+  display: block !important;
+  position: absolute !important;
+  inset: 60px 20px 20px 20px !important;
+  height: auto !important;
+  overflow-y: auto;
+  z-index: 999 !important;
+  background-color: var(--bg-for-navbar);
+  padding: 20px 20px 20px 40px !important;
+  border-radius: 15px;
+}
+.menu-bg {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.scroll_disable {
+  overflow: hidden !important;
+}
+.show_menu_animation {
+  animation: show 0.7s ease 1;
+}
+@keyframes show {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.nav_fixed {
+  background-color: var(--bg-for-navbar);
+  position: fixed !important;
+  z-index: 999 !important;
+}
+.apper{
+  display: none !important;
+}
+/* =============================End Header=============================================== */
+.info{
+  background: var(--card-color) !important;
+}
+.home-paga{
+  color: var(--color-for-button-and-icon) !important;
+}
+/* =============================Footer=============================================== */
+footer .upper-footer {
+  background-color: var(--bg-for-section);
+}
+
+footer .upper-footer .break {
+  background: var(--color-for-button-and-icon);
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+footer .upper-footer a:hover {
+  color: var(--color-for-button-and-icon) !important;
+}
+
+footer .lower-footer {
+  background-color: #191b1e;
+}
+
+footer .lower-footer a {
+  color: var(--color-for-button-and-icon);
+}
+
+footer .lower-footer ul li :hover {
+  background-color: var(--color-for-button-and-icon) !important;
+  color: white !important;
+}
+
+.break {
+  background: var(--color-for-button-and-icon);
+  color :  var(--color-for-button-and-icon);
+  width: 30px;
+  height: 5px;
+  border-radius: 10px;
+}
+/* =============================End Footer=============================================== */
+/* ============================= button ================================================ */
+.btn-to-top {
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-for-button-and-icon);
+}
+.btn-to-top:hover {
+  background-color: var(--hover-color);
+}
+/* =============================End button=============================================== */

@@ -1,0 +1,185 @@
+/* colors */
+:root {
+  --main-color: #121416;
+  --card-color: #191b1e;
+  --color-for-button-and-icon: #c59d5f;
+  --hover-color: #c59c5fa5;
+  --text-color: #343638;
+  --bg-for-section: #222426;
+  --second-bg-for-section: #0c0d0f;
+  --bg-for-navbar: #202224;
+}
+
+/* Fonts */
+:root {
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Comfortaa", sans-serif;
+  --nav-font: "Open Sans", sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+/* Global */
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font) !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom */
+form input,
+form select {
+  background: var(--card-color) !important;
+}
+
+.services .box i,
+.icon-features,
+.icon-form i,
+.text-img-layer h2,
+.title-info-booking,
+.icon-info-booking {
+  color: var(--color-for-button-and-icon) !important;
+}
+
+.box-festures,
+form input:focus,
+form select:focus,
+form button,
+.text-img-layer,
+.img-layer img {
+  transition: all 0.3s ease-in-out;
+}
+
+.box-festures {
+  background: #272625;
+  height: 60px;
+}
+
+.box-festures:hover {
+  background: #33302d;
+  transform: translateY(-5px);
+}
+
+.p-features {
+  font-size: clamp( 10px, 12px, 14px)  !important;
+}
+
+form {
+  border: 2px solid var(--hover-color) !important;
+  background: var(--bg-for-section) !important;
+  box-shadow: 0 0 8px var(--color-for-button-and-icon) !important;
+}
+
+form input,
+form select {
+  color: #ffffff !important;
+}
+
+form input:focus,
+form select:focus {
+  box-shadow: 0 0 8px var(--color-for-button-and-icon) !important;
+  border-color: var(--color-for-button-and-icon) !important;
+  transform: translateY(-5px);
+}
+
+form input::placeholder {
+  color: #6c757d !important;
+}
+
+form button,
+.p-booking {
+  background: var(--color-for-button-and-icon) !important;
+}
+
+form button:hover {
+  background: var(--hover-color) !important;
+}
+
+.icon-form i {
+  font-size: 20px;
+}
+
+.box-img {
+  height: 500px;
+}
+
+.text-img-layer {
+  width: 200px;
+  height: 200px;
+  background: var(--bg-for-section);
+  top: 30%;
+  left: 90%;
+}
+
+.img-layer {
+  width: 220px;
+  height: 300px;
+  top: 80%;
+  left: 90%;
+}
+
+/* Custom */
+.bookgin-info{
+  margin-top: 80px;
+  background: var(--card-color);
+}
+
+/* Media Query */
+
+/* Mobile for 425px to 100px */
+@media screen and (max-width: 450px) and (min-width: 100px) {
+  .clear-g {
+    --bs-gutter-x: 0 !important;
+  }
+  .text-img-layer {
+    width: 150px;
+    left: 75%;
+  }
+  .img-layer {
+    display: none;
+  }
+  .img-booking {
+    padding: 0 !important;
+  }
+  .info .container {
+    margin: 20px 0 !important;
+    padding: 10px 5px !important;
+  }
+  .second-row .col-sm-12, .second-row select, .features .col-sm-12{
+    width: 100%;
+  }
+  .icon-form{
+    display: none !important;
+  }
+}
+
+/* sweet alert style */
+
+.swal2-popup {
+  background-color: var(--bg-for-section) !important;
+  color: var(--color-for-button-and-icon) !important;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: var(--color-for-button-and-icon) !important;
+}
+
+.swal2-styled.swal2-confirm:hover {
+  background-color: var(--hover-color) !important;
+}
+
+.swal2-timer-progress-bar {
+  background-color: var(--color-for-button-and-icon) !important;
+}

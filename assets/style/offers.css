@@ -1,0 +1,98 @@
+:root {
+  --accent-color: #c59d5f;
+  --default-color: #bdbcbc;
+  --surface-color: #1e2022;
+  --item-color: #dddddd;
+}
+.page-title {
+  background-color: var(--surface-color) !important;
+}
+.special-text {
+  color: var(--color-for-button-and-icon);
+}
+.para-color {
+  color: var(--default-color);
+}
+.item-color {
+  color: var(--item-color);
+}
+.btn {
+  background-color: var(--color-for-button-and-icon);
+}
+.btn:hover {
+  background-color: var(--hover-color) !important;
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(205, 162, 116, 0.25);
+}
+.icons {
+  width: 70px;
+  height: 70px;
+  background-color: var(--color-for-button-and-icon);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.reserve-card {
+  background-color: var(--bg-for-section);
+  transition: 0.4s ease;
+}
+.reserve-card:hover {
+  transform: translateY(-8px);
+}
+.discount-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 65px;
+  height: 65px;
+  background-color: var(--color-for-button-and-icon);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.package-badge {
+  width: 160px;
+  height: 34px;
+  background-color: rgba(187, 146, 71, 0.1);
+  border-radius: 40px;
+}
+
+.price-box {
+  background-color: var(--card-color);
+}
+.reserve-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.offer-badge {
+  width: 90px;
+  height: 34px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.quick-offer .container .card {
+  height: 450px;
+}
+
+.card {
+  background-color: var(--bg-for-navbar);
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: var(--color-for-button-and-icon) !important;
+}

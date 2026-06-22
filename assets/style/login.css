@@ -1,0 +1,161 @@
+:root {
+  --main-color: #121416;
+  --color-for-button-and-icon: #c59d5f;
+  --text-color: #343638;
+  --bg-for-section: #222426;
+  --second-bg-for-section: #0c0d0f;
+  --bg-for-navbar: #202224;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/bg-login.jpeg) center/cover no-repeat;
+}
+
+/* header */
+header *,
+footer * {
+  transition: 0.3s linear all;
+}
+header {
+  background-color: var(--bg-for-navbar);
+}
+header a,
+footer a {
+  text-decoration: none !important;
+}
+header .active {
+  color: var(--color-for-button-and-icon) !important;
+}
+header .upper-header {
+  background-color: var(--second-bg-for-section);
+}
+header .upper-header ul li :hover {
+  color: white !important;
+}
+header .upper-header a:hover {
+  color: var(--color-for-button-and-icon) !important;
+  border-bottom: 1px solid white;
+  transition: 0s all linear !important;
+}
+header nav .dropdown-menu {
+  background-color: var(--bg-for-section);
+  transition: all 0.3s;
+}
+ul li :hover,
+header nav ul .dropdown a:hover * {
+  color: var(--color-for-button-and-icon) !important;
+}
+header nav .dropdown-item {
+  background-color: transparent !important;
+}
+header .navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.show_menu {
+  display: block !important;
+  position: absolute !important;
+  inset: 60px 20px 20px 20px !important;
+  height: auto !important;
+  overflow-y: auto;
+  z-index: 999 !important;
+  background-color: var(--bg-for-navbar);
+  padding: 20px 20px 20px 40px !important;
+  border-radius: 15px;
+}
+.menu-bg {
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.scroll_disable {
+  overflow: hidden !important;
+}
+/* end header */
+
+/* login page & signup page */
+
+.box-login,
+.box-signup {
+  background: #121416;
+}
+
+.icon-login,
+.icon-signup {
+  color: var(--color-for-button-and-icon);
+}
+
+.form-login input,
+.form-signup input {
+  background: var(--second-bg-for-section);
+  color: #fff;
+}
+
+.form-login input::placeholder,
+.form-signup input::placeholder {
+  color: #6c757d;
+}
+
+.form-login input:focus,
+.form-signup input:focus {
+  background: var(--second-bg-for-section);
+  border-color: var(--color-for-button-and-icon);
+  box-shadow: 0 0 0 0.25rem rgba(197, 157, 95, 0.25);
+}
+.form-login .btn-info,
+.form-signup .btn-info {
+  background: var(--color-for-button-and-icon) !important;
+  border-color: var(--color-for-button-and-icon) !important;
+}
+
+.forgotPassword,
+.createAccount {
+  color: #6c757d;
+}
+
+.forgotPassword:hover {
+  cursor: pointer;
+  color: var(--color-for-button-and-icon);
+  transition: all 0.3s ease-in-out;
+}
+
+.signUp,
+.login-page {
+  color: var(--color-for-button-and-icon);
+}
+
+/* signup page */
+
+.btn-signUp:hover i {
+  font-size: 20px;
+  transform: translate(10px, 0px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* media */
+
+@media screen and (max-width: 768px) and (min-width: 0px) {
+  .box-login,
+  .box-signup {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 0px) {
+  .password {
+    flex-direction: column !important;
+    margin: 10px;
+  }
+  .password input {
+    width: 100% !important;
+    margin: 5px auto !important;
+  }
+}

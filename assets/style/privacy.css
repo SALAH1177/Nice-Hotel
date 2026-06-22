@@ -1,0 +1,8 @@
+ul li::marker {
+    color: var(--color-for-button-and-icon);
+}
+
+.info-contact{
+    background: var(--bg-for-section);
+}
+

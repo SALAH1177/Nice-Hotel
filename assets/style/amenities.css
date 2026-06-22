@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* الكارت يطلع لفوق */
+.amenity-card:hover {
+  transform: translateY(-10px);
+}
+ .amenity-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-content p {
+  flex: 1;
+}
+.btns {
+  margin-top: 20px;
+}
+/* طبقة الزرقا */
+.image-box .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 90, 180, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* الدايرة البيضاء */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* Hover effects */
+.amenity-card:hover .overlay {
+  opacity: 1;
+ transition: all 0.5s ease;
+}
+.amenity-card:hover .icon-circle {
+  opacity: 1;
+  transform: translateY(0);
+}
+.amenity-card:hover .image-box img {
+  transform: scale(1.05);
+}
+/* image */
+.image-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.image-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+.amenity-card {
+  background: #222426;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  animation: slideUp 1s ease forwards;
+  width: 100%;
+  margin: 20px auto;
+  transition: 0.4s ease;
+}
+.amenity-card:hover .image-box::before {
+  opacity: 1;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.btns a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgb(190, 151, 99);
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  animation: slideUp 1s ease forwards;
+  margin-top: 20px;
+}
+.btns a:hover {
+  box-shadow: 0 5px 15px rgba(190, 151, 99, 0.5);
+}
+.grop-card {
+  background: #222426;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  transition: 0.4s;
+  height: 95%;
+  width: 100%;
+  padding: 40px 25px;
+}
+.grop-card:hover {
+  transform: translateY(-10px);
+  border-color: rgb(190, 151, 99);
+}
+.grop-card i {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 50%;
+  background: rgba(190, 151, 99, 0.08);
+  color: rgb(190, 151, 99);
+  font-size: 38px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+.grop-card:hover i {
+  background: rgb(190, 151, 99);
+  color: white;
+}
+/* section background */
+.dining-section {
+  border-radius: 25px;
+  margin: 40px;
+  border: 1px solid #111827;
+  padding: 30px;
+  background-color: var(--card-color);
+}
+.list-unstyled ul li i {
+  color: white !important;
+}
+/* buttons */
+.btn-gold:hover {
+  background: #d4a373;
+  box-shadow: 0 5px 15px rgba(212, 163, 115, 0.5);
+}
+.btn-outline-gold {
+  border: 2px solid #d4a373;
+  color: #d4a373;
+  border-radius: 30px;
+}
+.btn-outline-gold:hover {
+  background: #d4a373;
+  color: #ffff;
+  box-shadow: 0 5px 15px rgba(212, 163, 115, 0.5);
+}
+/* images */
+.small-img {
+  width: 155px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px;
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+  border: 5px solid #111827;
+}
+@media (max-width: 768px) {
+  .dining-section {
+    margin: 30px;
+    padding: 20px;
+  }
+
+  .small-img {
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .small-img {
+    position: static;
+    width: 100%;
+    height: 220px;
+    margin-top: 15px;
+  }
+}

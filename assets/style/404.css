@@ -1,0 +1,53 @@
+.icon i{
+    color: var(--color-for-button-and-icon);
+    font-size: 100px;
+}
+
+._404_ h2{
+    font-size: 130px;
+}
+
+.input-group input{
+    background-color: var(--main-color);
+    color: var(--color-for-button-and-icon);
+    border-color: var(--color-for-button-and-icon) !important;
+}
+
+.input-group input::placeholder{
+    color: var(--color-for-button-and-icon);
+}
+
+.input-group input:focus{
+    background-color: #fff !important;
+    color: #000 !important;
+    border-color: var(--color-for-button-and-icon) !important;
+    box-shadow: -2px 0 2px 2px var(--color-for-button-and-icon) !important;
+}
+
+.input-group button{
+    background-color: var(--color-for-button-and-icon);
+    color: var(--main-color);
+    border-color: var(--color-for-button-and-icon) !important;
+}
+
+.btn-success{
+    --bs-btn-bg: var(--color-for-button-and-icon) !important;
+    --bs-btn-border-color: var(--color-for-button-and-icon) !important;
+    --bs-btn-hover-bg: var(--hover-color) !important;
+    --bs-btn-hover-border-color: var(--hover-color) !important;
+}
+
+/* media */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 450px) {
+    .icon i{
+        font-size: 80px !important;
+    }
+    ._404_ h2{
+        font-size: 90px !important;
+    }
+    .search-box{
+        width: 90% !important;
+    }
+}

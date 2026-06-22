@@ -1,0 +1,220 @@
+.count,
+.awards .container {
+  background-color: var(--bg-for-section);
+}
+
+.count .count-num {
+  color: var(--color-for-button-and-icon);
+}
+
+.btn-to-rooms a,
+.btn-to-rooms:hover a i,
+.box-icon-about div,
+.box-content .box-hover,
+.rooms .container-fluid .rooms-link a:hover span i {
+  transition: var(--hover-box);
+}
+
+.btn-to-rooms:hover a {
+  transform: translateY(-5px);
+}
+
+.btn-to-rooms:hover a i {
+  transform: translateX(5px);
+}
+
+.btn-to-rooms .btn-warning {
+  --bs-btn-border-color: var(--color-for-button-and-icon) !important;
+  --bs-btn-bg: var(--color-for-button-and-icon) !important;
+  --bs-btn-hover-bg: var(--hover-color) !important;
+  --bs-btn-hover-border-color: var(--hover-color) !important;
+  --bs-btn-active-bg: var(--hover-color) !important;
+  --bs-btn-active-border-color: var(--hover-color) !important;
+}
+
+.box-img-about .main-img {
+  width: 390px !important;
+  height: 500px !important;
+}
+
+.box-img-about :is(.main-img, .layer-img) {
+  object-fit: cover;
+  object-position: center;
+}
+
+.box-img-about .layer-img {
+  width: 300px;
+  height: 350px !important;
+  border: 4px solid #000;
+  top: 80%;
+  left: 75%;
+}
+
+.box-icon-about:hover div {
+  transform: translateY(-5px);
+}
+
+.icon-about .container {
+  border-color: var(--color-for-button-and-icon) !important;
+}
+
+.box-icon,
+.icon-box-awards {
+  width: 70px;
+  height: 70px;
+  background: var(--color-for-button-and-icon);
+}
+
+.box-content .box-hover {
+  background: var(--main-color);
+  height: 170px;
+  border-color: var(--bg-for-section) !important;
+}
+
+.box-content:hover .box-hover {
+  border-color: var(--color-for-button-and-icon) !important;
+  transform: translateY(-5px);
+}
+
+.bg-section {
+  background-color: var(--bg-for-section);
+}
+
+.btn-bg {
+  background-color: var(--color-for-button-and-icon);
+}
+
+.btn-outline {
+  outline: 2px solid var(--color-for-button-and-icon);
+}
+
+.text-color {
+  color: var(--color-for-button-and-icon);
+}
+
+.transition {
+  transition: 0.3s all linear;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.rooms .container-fluid img {
+  transition: 0.5s ease all;
+}
+
+.rooms p {
+  color: #afafaf;
+}
+
+.rooms .container-fluid .title hr {
+  background: var(--color-for-button-and-icon);
+  width: 70px;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.rooms .container-fluid .room-img {
+  height: 200px;
+}
+
+.rooms .container-fluid img:hover {
+  transform: scale(1.1);
+}
+
+.rooms .container-fluid .room-img .room-details {
+  bottom: 5%;
+  left: 5%;
+}
+
+.rooms .container-fluid .room-img .room-details p {
+  width: fit-content;
+  font-size: 13px;
+}
+
+.rooms .container-fluid .room-img .img-details {
+  backdrop-filter: blur(8px);
+}
+
+.rooms .container-fluid span,
+.rooms .container-fluid .column-2 a {
+  color: var(--color-for-button-and-icon);
+}
+
+.rooms .container-fluid .column-2 .img span {
+  background-color: var(--color-for-button-and-icon);
+  color: white;
+  width: fit-content;
+  top: 15px;
+  right: 15px;
+}
+
+.rooms .container-fluid .column-2 .rooms-view {
+  width: 48%;
+}
+
+.rooms .container-fluid .rooms-preview .trans:hover {
+  transform: translateY(-5px);
+}
+
+.rooms .container-fluid .offer a {
+  outline: 1px solid rgba(255, 255, 255, 0.507);
+}
+
+.rooms .container-fluid .offer a:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+.rooms .container-fluid .rooms-link a:hover {
+  background-color: var(--color-for-button-and-icon);
+  transform: translateY(-5px);
+}
+
+.rooms .container-fluid .rooms-link a:hover span i {
+  transform: translateX(5px);
+}
+
+/* Media */
+/* tablet */
+@media (max-width: 991px) {
+  .rooms .container-fluid .column-2 .rooms-view {
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .box-img-about :is(.main-img, .layer-img) {
+    width: 100% !important;
+  }
+  .box-img-about .layer-img {
+    height: auto !important;
+    position: static !important;
+    transform: translate(0, 0) !important;
+    margin-top: 8px;
+  }
+  .box-content .box-hover .icon-box-awards {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+  }
+}
+
+/* Media medium */
+@media (max-width: 575px) and (min-width: 350px) {
+  .box-content .box-hover :is(h5, p) {
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+/* Media small */
+@media (max-width: 349px) and (min-width: 1px) {
+  .box-content .box-hover :is(h5, p) {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,71 @@
+/* global */
+.text-updated,
+.updated-1 div i,
+.list-second-update li::marker,
+.box-third-updated .col-12 .col-12 i,
+.box-list-fifth-updated ul li::marker,
+.dox-tenth-updated i {
+  color: var(--color-for-button-and-icon) !important;
+}
+
+/* start page */
+.title-updated {
+  background-color: #2e2921;
+  height: 50px;
+}
+
+.text-updated {
+  font-size: clamp(10px, 14px, 16px);
+}
+
+.box-first-updated,
+.dox-tenth-updated,
+.questions-box {
+  background: #1b1b1a;
+}
+
+.box-third-updated,
+.box-danger,
+.box-list-fifth-updated {
+  background: var(--bg-for-section);
+  border-color: var(--color-for-button-and-icon) !important;
+  transition: var(--hover-box);
+}
+
+.box-danger:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 8px var(--color-for-button-and-icon) !important;
+}
+
+.questions-box{
+  width: 65%;
+}
+
+.questions-box .col-2 {
+  background: var(--color-for-button-and-icon);
+  height: 80px;
+  width: 80px;
+}
+
+.btn-warning{
+    --bs-btn-bg: var(--color-for-button-and-icon) !important;
+    --bs-btn-border-color: var(--color-for-button-and-icon) !important;
+    --bs-btn-hover-bg: var(--hover-color) !important;
+    --bs-btn-hover-border-color: var(--hover-color) !important;
+}
+
+/* media query */
+
+/* tablet */
+@media screen and (max-width: 770px) and (min-width: 349px) {
+  .title-updated, .questions-box{
+    width: 70% !important;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 350px) and (min-width: 0px) {
+  .title-updated, .questions-box {
+    width: 90% !important;
+  }
+}
