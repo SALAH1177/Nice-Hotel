@@ -116,10 +116,10 @@ form button:hover {
 }
 
 .text-img-layer {
-  width: 200px;
+  width: 155px;
   height: 200px;
   background: var(--bg-for-section);
-  top: 30%;
+  top: 27%;
   left: 90%;
 }
 
@@ -130,7 +130,6 @@ form button:hover {
   left: 90%;
 }
 
-/* Custom */
 .bookgin-info{
   margin-top: 80px;
   background: var(--card-color);
@@ -139,29 +138,13 @@ form button:hover {
 /* Media Query */
 
 /* Mobile for 425px to 100px */
-@media screen and (max-width: 450px) and (min-width: 100px) {
-  .clear-g {
-    --bs-gutter-x: 0 !important;
-  }
-  .text-img-layer {
-    width: 150px;
-    left: 75%;
-  }
-  .img-layer {
-    display: none;
-  }
+@media screen and (max-width: 992px) and (min-width: 100px) {
   .img-booking {
     padding: 0 !important;
   }
   .info .container {
     margin: 20px 0 !important;
     padding: 10px 5px !important;
-  }
-  .second-row .col-sm-12, .second-row select, .features .col-sm-12{
-    width: 100%;
-  }
-  .icon-form{
-    display: none !important;
   }
 }
 
